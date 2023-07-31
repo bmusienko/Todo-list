@@ -1,0 +1,14 @@
+@mixin flex-center($inline: false) {
+  @if $inline {
+    display: inline-flex;
+  }@else {
+    display: flex;
+  }
+  justify-content: center;
+  align-items: center;
+}
+@mixin center-and-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
